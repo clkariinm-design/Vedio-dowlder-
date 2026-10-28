@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">VidMate Pro</string>
+    <string name="app_tagline">Soo Dajiye TikTok oo Toos ah</string>
+    
+    <!-- Navigation & Tabs -->
+    <string name="tab_downloader">Soo Dajiye</string>
+    <string name="tab_history">Dajinta</string>
+    <string name="tab_player">Daare</string>
+    <string name="tab_settings">Dejinta</string>
+
+    <!-- Downloader Screen -->
+    <string name="input_hint">Ku dheji lifaaqa muuqaalka TikTok halkan…</string>
+    <string name="paste_button">Dheji</string>
+    <string name="clear_button">Tirtir</string>
+    <string name="download_button">Soo Daji Muuqaalka</string>
+    <string name="download_audio_button">Soo Daji Codka (MP3)</string>
+    <string name="paste_from_clipboard">Waa laga soo dhejiyay xusuusta qoraalka</string>
+    <string name="clipboard_empty">Xusuusta qoraalku way maran tahay ama kuma jiro lifaaq TikTok</string>
+    <string name="sample_link_prompt">Ma u baahan tahay tijaabo? Tijaabi lifaaq</string>
+    <string name="sample_link_added">Lifaaqii tijaabada ee TikTok waa lagu daray</string>
+
+    <!-- Status & Progress -->
+    <string name="status_idle">Diyaar u ah soo dajin</string>
+    <string name="status_extracting">Muuqaalka ayaa laga soo saarayaa qalabkaaga dhexdiisa…</string>
+    <string name="status_downloading">Muuqaalka ayaa la soo dajinayaa…</string>
+    <string name="status_verifying">Faylka ayaa la xaqiijinayaa…</string>
+    <string name="status_success">Soo dajintu way dhammaatay waana la xaqiijiyay!</string>
+    <string name="status_cancelled">Soo dajintii waa la joojiyay</string>
+    <string name="status_error">Khalad soo dajinta ah</string>
+    <string name="cancel_button">Jooji</string>
+
+    <!-- Error Messages -->
+    <string name="err_empty_url">Fadlan geli ama dheji lifaaqa TikTok</string>
+    <string name="err_invalid_url">Lifaaqa TikTok sax ma aha. Waa inuu ka kooban yahay tiktok.com, vt.tiktok.com, ama vm.tiktok.com</string>
+    <string name="err_extraction_failed">Lama soo saari karin muuqaalka. Waxaa laga yaabaa in muuqaalku qarsoodi yahay, la tirtiray, ama gobol gaar ah ku xaddidan yahay.</string>
+    <string name="err_network">Khalad xagga khadka internetka ah. Fadlan hubi khadkaaga oo dib u tijaabi.</string>
+    <string name="err_verification_failed">Xaqiijintii faylka way fashilantay: faylku ma dhammaystirna ama wuu xumaaday.</string>
+    <string name="err_storage">Khalad kaydinta ah: faylka muuqaalka lama qori karin.</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Muuqaallada La Soo Dajiyay</string>
+    <string name="history_empty_title">Wali Waxba Lama Soo Dajin</string>
+    <string name="history_empty_desc">Muuqaallada TikTok ee aad soo dajisay waxay ka muuqan doonaan halkan iyo album-ka taleefankaaga.</string>
+    <string name="history_filter_all">Dhammaan</string>
+    <string name="history_filter_video">Muuqaallo</string>
+    <string name="history_filter_audio">Codad</string>
+    <string name="play_action">Daaro</string>
+    <string name="share_action">La wadaag</string>
+    <string name="delete_action">Tirtir</string>
+    <string name="delete_confirm_title">Ma tirtirtaa faylka?</string>
+    <string name="delete_confirm_message">Tani waxay si joogto ah u tirtiri doontaa muuqaalka kaydka taleefankaaga.</string>
+    <string name="delete_success">Muuqaalkii si guul leh ayaa loo tirtiray</string>
+    <string name="file_not_found">Faylkii lagama helin kaydka taleefanka</string>
+    <string name="open_external">Ku fur Barnaamij Kale</string>
+
+    <!-- Player Screen -->
+    <string name="player_title">Daaraha Muuqaalka</string>
+    <string name="player_no_video">Ka dooro muuqaal liiska dajinta si aad u daawato</string>
+    <string name="player_now_playing">Hadda Waxaa Socda</string>
+    <string name="player_loop_toggle">Ku Celceli Daawashada</string>
+    <string name="player_back_to_history">Ku noqo Dajinta</string>
+
+    <!-- Settings & Engine -->
+    <string name="settings_title">Dejinta &amp; Matoorka</string>
+    <string name="section_language">Luqadda (Language)</string>
+    <string name="section_theme">Muuqaalka Shaashadda</string>
+    <string name="section_engine">Xogta Matoorka &amp; yt-dlp</string>
+    <string name="section_storage">Xogta Kaydinta</string>
+    <string name="section_about">Ku saabsan VidMate Pro</string>
+
+    <string name="lang_english">English</string>
+    <string name="lang_somali">Af-Soomaali</string>
+
+    <string name="theme_system">Sida Taleefanka</string>
+    <string name="theme_light">Muuqaal Cad (Iftiin)</string>
+    <string name="theme_dark">Muuqaal Madow</string>
+
+    <string name="engine_active_label">Matoorka Shaqeynaya</string>
+    <string name="engine_active_desc">Matoor Toos ah oo Qalabka ku dhex shaqeeya (Pure Kotlin). Wax server ah uma baahna, 100% taleefankan ayuu ku shaqeeyaa.</string>
+    <string name="ytdlp_title">Xaaladda yt-dlp</string>
+    <string name="ytdlp_explanation">yt-dlp wuxuu u baahan yahay Python buuxa (~80MB) ama Termux. VidMate Pro wuxuu isticmaalaa matoor toos ah oo fudud oo taleefanka dhexdiisa ka soo saara muuqaallada bilaa server.</string>
+
+    <string name="storage_location_title">Goobta Kaydinta</string>
+    <string name="storage_location_desc">Movies/VidMatePro (Kaydka Caadiga ah ee Android MediaStore)</string>
+    <string name="watermark_disclaimer_title">Hufnaanta Calaamadda (Watermark)</string>
+    <string name="watermark_disclaimer_desc">Muuqaallada waxaa si toos ah looga soo qaadaa xariirka TikTok. Haddii calaamadda laga saari karo waxay ku xiran tahay habka TikTok u bixiyo feylka.</string>
+    <string name="version_info">Nooca 1.0.0 (Build 2026)</string>
+</resources>

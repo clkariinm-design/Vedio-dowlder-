@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">VidMate Pro</string>
+    <string name="app_tagline">Fast On-Device TikTok Downloader</string>
+    
+    <!-- Navigation & Tabs -->
+    <string name="tab_downloader">Downloader</string>
+    <string name="tab_history">Downloads</string>
+    <string name="tab_player">Player</string>
+    <string name="tab_settings">Settings</string>
+
+    <!-- Downloader Screen -->
+    <string name="input_hint">Paste TikTok video link here…</string>
+    <string name="paste_button">Paste</string>
+    <string name="clear_button">Clear</string>
+    <string name="download_button">Download Video</string>
+    <string name="download_audio_button">Download Audio (MP3)</string>
+    <string name="paste_from_clipboard">Pasted from clipboard</string>
+    <string name="clipboard_empty">Clipboard is empty or does not contain a TikTok link</string>
+    <string name="sample_link_prompt">Need a test link? Try a sample</string>
+    <string name="sample_link_added">Sample TikTok link added</string>
+
+    <!-- Status & Progress -->
+    <string name="status_idle">Ready to download</string>
+    <string name="status_extracting">Extracting video stream on-device…</string>
+    <string name="status_downloading">Downloading video…</string>
+    <string name="status_verifying">Verifying file integrity…</string>
+    <string name="status_success">Download complete and verified!</string>
+    <string name="status_cancelled">Download cancelled</string>
+    <string name="status_error">Download error</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- Error Messages -->
+    <string name="err_empty_url">Please enter or paste a TikTok URL</string>
+    <string name="err_invalid_url">Invalid TikTok URL. Links must contain tiktok.com, vt.tiktok.com, or vm.tiktok.com</string>
+    <string name="err_extraction_failed">Unable to extract direct video stream. The video may be private, deleted, or regional restricted.</string>
+    <string name="err_network">Network error. Please check your connection and try again.</string>
+    <string name="err_verification_failed">File verification failed: downloaded file was incomplete or corrupted.</string>
+    <string name="err_storage">Storage error: could not write video file.</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Downloaded Videos</string>
+    <string name="history_empty_title">No Downloads Yet</string>
+    <string name="history_empty_desc">Downloaded TikTok videos will appear here and in your device gallery.</string>
+    <string name="history_filter_all">All</string>
+    <string name="history_filter_video">Videos</string>
+    <string name="history_filter_audio">Audio</string>
+    <string name="play_action">Play</string>
+    <string name="share_action">Share</string>
+    <string name="delete_action">Delete</string>
+    <string name="delete_confirm_title">Delete Download?</string>
+    <string name="delete_confirm_message">This will permanently remove the video file from your device storage.</string>
+    <string name="delete_success">Video deleted successfully</string>
+    <string name="file_not_found">File no longer exists on storage</string>
+    <string name="open_external">Open in External App</string>
+
+    <!-- Player Screen -->
+    <string name="player_title">Video Player</string>
+    <string name="player_no_video">Select a video from your Downloads list to start playback</string>
+    <string name="player_now_playing">Now Playing</string>
+    <string name="player_loop_toggle">Loop Playback</string>
+    <string name="player_back_to_history">Back to Downloads</string>
+
+    <!-- Settings & Engine -->
+    <string name="settings_title">Settings &amp; Engine</string>
+    <string name="section_language">Language</string>
+    <string name="section_theme">Theme</string>
+    <string name="section_engine">Download Engine &amp; yt-dlp Status</string>
+    <string name="section_storage">Storage Information</string>
+    <string name="section_about">About VidMate Pro</string>
+
+    <string name="lang_english">English</string>
+    <string name="lang_somali">Af-Soomaali (Somali)</string>
+
+    <string name="theme_system">System Default</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+
+    <string name="engine_active_label">Active Engine</string>
+    <string name="engine_active_desc">Native On-Device Extractor (Pure Kotlin / Coroutines). Zero external server, runs 100% on this phone.</string>
+    <string name="ytdlp_title">yt-dlp Architecture Status</string>
+    <string name="ytdlp_explanation">yt-dlp requires bundling a full CPython 3 runtime (~80MB native ABI) or Termux environment. VidMate Pro implements an extensible VideoDownloadEngine architecture. The current native extractor performs direct client-side stream resolution without Python overhead or external servers.</string>
+
+    <string name="storage_location_title">Storage Location</string>
+    <string name="storage_location_desc">Movies/VidMatePro (Standard Android MediaStore)</string>
+    <string name="watermark_disclaimer_title">Watermark Transparency</string>
+    <string name="watermark_disclaimer_desc">Streams are downloaded directly from TikTok\'s available web delivery endpoints. Availability of watermark-free feeds depends on TikTok\'s dynamic regional CDN delivery.</string>
+    <string name="version_info">Version 1.0.0 (Build 2026)</string>
+</resources>

@@ -1,0 +1,6 @@
+{
+  "name": "VidMate Pro",
+  "description": "Fast, serverless TikTok video downloader & offline media player with on-device video extraction, download history, and Somali & English localization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
