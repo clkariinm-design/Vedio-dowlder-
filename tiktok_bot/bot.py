@@ -11,9 +11,8 @@ from telegram import Update
 from telegram.constants import ChatAction
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-# TOKEN-KAAGA HALKAN KU BEDDEL TOKEN-KAAGA CUSUB.
-# Ama Railway Variables ku deji TELEGRAM_BOT_TOKEN (wuxuu ka hormarayaa kan hoose).
-BOT_TOKEN = "8615583561:AAHnwd6jgksnGxa7bgeHyOCg7C2vPHNgDGc"
+# Bot token-ka waxaa laga akhriyaa Railway Variables oo keliya.
+BOT_TOKEN = ""
 
 MAX_FILE_BYTES = 49 * 1024 * 1024
 logging.basicConfig(
@@ -94,11 +93,10 @@ async def handle_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 def main():
-    token = os.getenv("TELEGRAM_BOT_TOKEN") or BOT_TOKEN
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
     if not token or token == "GELI_TOKEN_KAAGA_HALKAN":
         raise RuntimeError(
-            "Token ma jiro. Ku beddel BOT_TOKEN gudaha bot.py ama geli Railway variable "
-            "TELEGRAM_BOT_TOKEN."
+            "Token ma jiro. Geli Railway variable TELEGRAM_BOT_TOKEN."
         )
     app = Application.builder().token(token).build()
     app.add_handler(CommandHandler("start", start))
