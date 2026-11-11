@@ -13,7 +13,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, ContextTyp
 
 # TOKEN-KAAGA HALKAN KU BEDDEL TOKEN-KAAGA CUSUB.
 # Ama Railway Variables ku deji TELEGRAM_BOT_TOKEN (wuxuu ka hormarayaa kan hoose).
-BOT_TOKEN = "GELI_TOKEN_KAAGA_HALKAN"
+BOT_TOKEN = "8615583561:AAHnwd6jgksnGxa7bgeHyOCg7C2vPHNgDGc"
 
 MAX_FILE_BYTES = 49 * 1024 * 1024
 logging.basicConfig(
