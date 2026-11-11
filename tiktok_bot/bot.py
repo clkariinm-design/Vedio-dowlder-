@@ -23,14 +23,14 @@ logging.basicConfig(
 logger = logging.getLogger("tiktok-downloader")
 
 def valid_tiktok_url(text: str) -> bool:
-    match = re.search(r"https?://\\S+", text or "")
+    match = re.search(r"https?://\S+", text or "")
     if not match:
         return False
     host = (urlparse(match.group(0).rstrip(".,!?)]}")).hostname or "").lower()
     return host == "tiktok.com" or host.endswith(".tiktok.com")
 
 def extract_url(text: str) -> str | None:
-    match = re.search(r"https?://\\S+", text or "")
+    match = re.search(r"https?://\S+", text or "")
     return match.group(0).rstrip(".,!?)]}") if match else None
 
 def download_video(url: str, folder: str) -> Path:
@@ -86,8 +86,8 @@ async def handle_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
                     connect_timeout=30,
                 )
         await status.delete()
-    except Exception as exc:
-        logger.exception("Video download/send failed: %s", exc)
+    except Exception:
+        logger.exception("Video download/send failed")
         await status.edit_text(
             "Download-ku ma suurtagelin. Hubi link-ga, ama video-gu private/aan la taageerin/"
             "ka weyn 49 MB ayuu noqon karaa."
