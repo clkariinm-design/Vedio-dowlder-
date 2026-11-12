@@ -21,7 +21,7 @@ def health() -> dict[str, str]:
 
 
 @app.get("/matches")
-def matches(date: str = Query(..., pattern=r"^\\d{4}-\\d{2}-\\d{2}$")):
+def matches(date: str = Query(..., pattern=r"^\d{4}-\d{2}-\d{2}$")):
     try:
         return {"date": date, "matches": client.matches(date), "source": "API-Football"}
     except ResearchError as exc:
