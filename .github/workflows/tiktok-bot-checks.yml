@@ -1,4 +1,4 @@
-name: TikTok bot checks
+name: Sports prediction demo checks
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           python-version: "3.11"
       - name: Install dependencies
         run: pip install -r requirements.txt
-      - name: Compile and test bot
+      - name: Compile and test
         run: |
-          python -m py_compile bot.py
+          python -m py_compile bot.py game.py
           python -m unittest discover -s . -p "test_*.py"
