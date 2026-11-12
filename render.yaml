@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: telegram-video-audio-downloader
+    runtime: docker
+    plan: starter
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: MAX_DURATION_SECONDS
+        value: "3600"
