@@ -1,25 +1,29 @@
-# TikTok Telegram Downloader Bot
+# Sports Prediction Telegram Bot (Demo)
 
-## Deploy
-1. Ku dar token-ka Telegram Railway Variables magaca `TELEGRAM_BOT_TOKEN` (ha gelin token-ka source code).
-2. Railway wuxuu rakibayaa `requirements.txt`, kadibna wuxuu bilaabayaa `python bot.py`.
-3. Telegram ka fur bot-ka oo dir `/start`.
+This version replaces the TikTok downloader with a sports prediction game using virtual coins only.
 
-## Features
-- Download queue iyo xaddididda downloads-ka isku mar socda.
-- Horumarka download-ka oo Telegram lagu tuso.
-- Tayada video-ga: `/quality high`, `/quality medium`, ama `/quality low`.
-- Xakamaynta spam-ka user kasta.
-- Khaladaad si cad loo maareeyo.
-- Tirakoob admin oo lagu furo `/stats`.
+## Railway deployment
+1. Keep the existing Railway variable `TELEGRAM_BOT_TOKEN`.
+2. Set `ADMIN_IDS` to your Telegram numeric user ID (comma-separated if multiple admins).
+3. Railway installs `requirements.txt` and starts `python bot.py`.
+4. Open the existing Telegram bot and send `/start`.
 
-## Optional Railway variables
-- `ADMIN_IDS`: Telegram numeric user IDs oo comma-separated ah, tusaale `123456789,987654321`. Ku dar ID-gaaga si aad u isticmaasho `/stats`.
-- `MAX_CONCURRENT_DOWNLOADS`: downloads isku mar socda; default `2`.
-- `MAX_QUEUE_SIZE`: tirada codsiyada safka iyo kuwa sugaya; default `20`.
-- `USER_COOLDOWN_SECONDS`: inta ilbiriqsi ee user-ku sugo codsi kale; default `15`.
-- `LOG_LEVEL`: log level; default `INFO`.
+## Player commands
+- `/start` - create/open your demo wallet (1,000 virtual coins for a new user).
+- `/matches` - list sample demo fixtures and odds.
+- `/bet demo1 home 100` - place a virtual-coin prediction. Outcomes: `home`, `draw`, `away`.
+- `/wallet` - show balance.
+- `/leaderboard` - top players.
+- `/help` - instructions.
 
-**Fiiro gaar ah:** Tirakoobka hadda wuxuu ku jiraa xusuusta process-ka; wuu eber noqonayaa marka bot-ka la restart-gareeyo ama redeploy la sameeyo. Haddii aad rabto tirakoob joogto ah, ku xiro database/volume persistent ah.
+## Admin commands
+- `/settle demo1 home` - settle a demo match; outcomes: home/draw/away.
+- `/stats` - basic demo statistics.
 
-Isticmaal kaliya muuqaallo aad leedahay ama aad fasax u haysato inaad soo dejisato. Bot-ku ma dhaafo private/restricted content.
+## Configuration
+- `TELEGRAM_BOT_TOKEN`: existing Telegram bot token.
+- `ADMIN_IDS`: Telegram numeric user IDs.
+- `GAME_DB_PATH`: SQLite database path; defaults to `game.db`.
+
+## Important
+This is a test game, not a real-money betting service. Virtual coins have no cash value. No deposits, cash withdrawals, real odds feed, or real match results are connected. The bundled fixtures and odds are sample data for testing only. SQLite data on Railway's ephemeral filesystem can be lost on redeploy/restart; configure a persistent Railway volume or managed database before using this beyond a disposable demo.
