@@ -1,8 +1,8 @@
-name: Sports prediction demo checks
+name: Sports research backend checks
 
 on:
   push:
-    branches: ["tiktok-telegram-bot"]
+    branches: ["tiktok-telegram-bot", "sports-research-backend"]
     paths:
       - "tiktok_bot/**"
       - ".github/workflows/tiktok-bot-checks.yml"
@@ -22,5 +22,5 @@ jobs:
         run: pip install -r requirements.txt
       - name: Compile and test
         run: |
-          python -m py_compile bot.py game.py
+          python -m py_compile bot.py game.py research.py web_api.py
           python -m unittest discover -s . -p "test_*.py"
