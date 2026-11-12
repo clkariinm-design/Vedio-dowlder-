@@ -132,7 +132,7 @@ async def stats_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"Users: {len(KNOWN_USERS)}\n"
         f"Codsiyada: {STATS['requests']}\n"
         f"Guulaystay: {STATS['completed']}\n"
-        Fashilmay: {STATS['failed']}\n"
+        f"Fashilmay: {STATS['failed']}\n"
         f"Hadda socda: {active}\n"
         f"Safka ku jira: {queued}"
     )
